@@ -1,10 +1,18 @@
 import "./styles.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>THE FLAT FINDER</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact />
+        </Switch>
+      </Router>
+    </>
   );
 }
+
+export default App;
