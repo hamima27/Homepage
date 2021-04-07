@@ -1,7 +1,45 @@
 .navbar-logo {
-  color: white;
+  color: #f2ead6;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
-.nav-item {
-  color: #351f31;
-  background: none;
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #351f31;
+  font-family: "Lato", sans-serif;
+}
+
+.nav-links {
+  color: #f2ead6;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+  text-align: right;
+}
+
+.nav-links a {
+  color: #f2ead6;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
 }
