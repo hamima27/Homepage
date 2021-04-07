@@ -17,6 +17,26 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}></ul>
         </div>
       </nav>
+      <button class="ham">
+        <span class="menuIcon material-icons">Profile</span>
+      </button>
+      <ul class="menu">
+        <li>
+          <a class="menuLink" href="#">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="menuLink" href="#">
+            About Us!
+          </a>
+        </li>
+        <li>
+          <a class="menuLink" href="#">
+            Contacts
+          </a>
+        </li>
+      </ul>
     </>
   );
 }
