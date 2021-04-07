@@ -17,22 +17,22 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}></ul>
         </div>
       </nav>
-      <button class="ham">
-        <span class="menuIcon material-icons">Profile</span>
+      <button className="ham">
+        <span className="menuIcon material-icons">Profile</span>
       </button>
       <ul class="menu">
         <li>
-          <a class="menuLink" href="#">
+          <a className="menuLink" href="Navbar.css">
             Home
           </a>
         </li>
         <li>
-          <a class="menuLink" href="#">
+          <a className="menuLink" href="Navbar.css">
             About Us!
           </a>
         </li>
         <li>
-          <a class="menuLink" href="#">
+          <a className="menuLink" href="Navbar.css">
             Contacts
           </a>
         </li>
