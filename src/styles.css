@@ -1,8 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .app {
   font-family: sans-serif;
-  color: #f2ead6;
+  color: white;
   font-size: 19px;
-  background-image: url("https://cdn.dribbble.com/users/1118956/screenshots/14259769/media/5fdc2f11c7f94616cca7ad158504853f.jpg");
+  background-color: #351f31;
 }
 .App-header {
   width: 100%;
@@ -14,18 +19,19 @@
   width: 100%;
   height: 100px;
 }
-
 .box-holder {
+  margin-top: 0.5em;
   left: 640px;
-  position: absolute;
-  width: 300px;
+  position: relative;
+  width: 250px;
   height: 20px;
   font-family: cursive;
 }
 .search-bar {
-  display: inline-block;
-  width: 250px;
-  height: 50%;
+  float: right;
+  left: 500px;
+  width: 300px;
+  height: 30%;
   border-radius: 15px;
   border: 1px solid #fff;
 }

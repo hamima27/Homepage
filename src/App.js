@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <div className="app">
-        THE FLAT FINDER
-        <Router>
-          <Navbar />
-          <main>
+        <main>
+          <Router>
+            <Navbar />
+
             <Switch>
               <Route path="/" exact />
             </Switch>
@@ -32,8 +32,8 @@ function App() {
                 </div>
               </header>
             </body>
-          </main>
-        </Router>
+          </Router>
+        </main>
       </div>
     </>
   );
