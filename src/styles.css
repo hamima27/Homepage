@@ -1,4 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-image: url("https://cdn.dribbble.com/users/1118956/screenshots/14259769/media/5fdc2f11c7f94616cca7ad158504853f.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
