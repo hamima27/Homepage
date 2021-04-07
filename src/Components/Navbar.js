@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react"; */
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import "./Button.css";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  /* const [click, setClick] = useState(false); */
+  /* const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const [button, setButton] = useState(true);
 
@@ -15,9 +15,9 @@ function Navbar() {
     } else {
       setButton(true);
     }
-  };
+  }; */
 
-  window.addEventListener("resize", showButton);
+  /* window.addEventListener("resize", showButton); */
   return (
     <>
       <nav className="navbar">
@@ -31,33 +31,21 @@ function Navbar() {
           {/* <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div> */}
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" classname="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
+          <ul className="nav-links">
+            <li>
+              <a href="/">Home</a>
             </li>
-            <li className="nav-items">
-              <Link to="/" classname="nav-links" onClick={closeMobileMenu}>
-                Settings
-              </Link>
+            <li>
+              <a href="/">Profile</a>
             </li>
-            <li li className="nav-items">
-              <Link to="/" classname="nav-links" onClick={closeMobileMenu}>
-                About us!
-              </Link>
+            <li>
+              <a href="/">Settings</a>
             </li>
-            <li li className="nav-items">
-              <Link
-                to="/Profile"
-                classname="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Profile
-              </Link>
+            <li>
+              <a href="/">About us!</a>
             </li>
           </ul>
-          {button && <button buttonStyle="btn--outline">Profile</button>}
+          {/*{button && <button buttonStyle="btn--outline">Profile</button>}*/}
         </div>
       </nav>
     </>
