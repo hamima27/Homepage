@@ -8,9 +8,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            THE FLAT FINDER!
-          </Link>
+          <Link to="/" className="navbar-logo"></Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
