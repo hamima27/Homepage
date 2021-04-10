@@ -31,18 +31,20 @@ function Navbar() {
           {/* <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div> */}
+          {/*<div className="container">
+              <span id="box-holder">
+                <input
+                  className="search-bar"
+                  type="search"
+                  placeholder="Search"
+                  onChange={(e) => setQuery(e.target.value)}
+                  value={query}
+                />
+              </span>
+        </div> */}
           <ul className="nav-links">
             <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
               <a href="/">Profile</a>
-            </li>
-            <li>
-              <a href="/">Settings</a>
-            </li>
-            <li>
-              <a href="/">About us!</a>
             </li>
           </ul>
           {/*{button && <button buttonStyle="btn--outline">Profile</button>}*/}
