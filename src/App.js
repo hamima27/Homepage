@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-
+import Chatbot from "react-chatbot-kit";
+import config from "./chatbot/config.js";
+import MessageParser from "./chatbot/MessageParser";
+import ActionProvider from "./chatbot/ActionProvider";
 function App() {
   const [query, setQuery] = useState("");
 
@@ -26,23 +29,7 @@ function App() {
                 />
               </span>
             </div>
-            <body>
-              {/*<header className="App-header">
-                <div className="column">
-                 <div className="container">
-                   <span id="box-holder">
-                     <input
-                        className="search-bar"
-                        type="search"
-                        placeholder="Search"
-                        onChange={(e) => setQuery(e.target.value)}
-                        value={query}
-                     />
-                   </span>
-                  </div>
-                </div>
-            </header>*/}
-            </body>
+            <body></body>
             <div className="row">
               <div className="column">
                 <img
@@ -80,6 +67,13 @@ function App() {
           <p className="footer-container">
             <em>Contact Us</em>
           </p>
+          <div style={{ maxWidth: "300px" }}>
+            <Chatbot
+              config={config}
+              actionProvider={ActionProvider}
+              messagerParser={MessageParser}
+            />
+          </div>
         </footer>
       </div>
     </>
