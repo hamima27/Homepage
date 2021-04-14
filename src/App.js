@@ -38,13 +38,6 @@ function App() {
                 alt="pic"
               />
             </div>
-            <div style={{ maxWidth: "300px" }}>
-              <Chatbot
-                config={config}
-                actionProvider={ActionProvider}
-                messageParser={MessageParser}
-              />
-            </div>
             <br></br>
             <br></br>
           </div>
@@ -74,6 +67,21 @@ function App() {
           <p className="footer-container">
             <em>Contact Us</em>
           </p>
+          <div
+            style={{
+              maxWidth: "300px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              backgroundColor: "#2f2e2e",
+              marginTop: "-5%"
+            }}
+          >
+            <Chatbot
+              config={config}
+              actionProvider={ActionProvider}
+              messageParser={MessageParser}
+            />
+          </div>
         </footer>
       </div>
     </>

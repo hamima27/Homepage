@@ -1,4 +1,3 @@
-// Config starter code
 import { createChatBotMessage } from "react-chatbot-kit";
 import React from "react";
 import Options from "../Components/Options/Options";
@@ -26,6 +25,20 @@ const config = {
             answer:
               "Just type in the area that suits you,apply any other filters! Happy searching!",
             id: 1
+          }
+        ]
+      }
+    },
+    {
+      widgetName: "Profile",
+      widgetFunc: (props) => <Quiz {...props} />,
+      props: {
+        questions: [
+          {
+            question: "Click here to learn more about your profile",
+            answer:
+              "Your profile is a place where you can choose what others see aboout you! Here you can add information about yourself and what you're looking for!",
+            id: 2
           }
         ]
       }
